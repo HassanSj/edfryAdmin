@@ -8,7 +8,7 @@ const Admission = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admission/get"
+        "https://edfry-backend.vercel.app/admission/get"
       );
       const data = response.data;
       setAdmission(data)
