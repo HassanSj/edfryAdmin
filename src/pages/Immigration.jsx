@@ -17,7 +17,7 @@ const Immigration = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/immigration/get"
+        "https://edfry-backend.vercel.app/api/immigration/get"
       );
       const data = response.data;
       setRecord(data)
